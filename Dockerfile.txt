@@ -1,0 +1,16 @@
+FROM python:3.9-slim
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+EXPOSE 80
+
+ENV YOUTUBER_API_KEY=youtube_api_key
+ENV TMDB_API_KEY=tmdb_api_key
+ENV IMDB_API_KEY=imdb_api_key
+
+CMD ["python", "./Project_Code.py"]
+
