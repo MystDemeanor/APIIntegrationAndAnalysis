@@ -300,15 +300,15 @@ def main():
     
     #API Keys
 
-    #youtube_api_key = 'AIzaSyDPUAhv0MyBZvWHGixTFObO1ov41OMLh8k' #YouTube API Key that has reached its quota
-
     youtube_api_key = os.getenv('YOUTUBE_API_KEY', 'default_youtube_api_key')
     tmdb_api_key = os.getenv('TMDB_API_KEY', 'default_tmdb_api_key')
     imdb_api_key = os.getenv('IMDB_API_KEY', 'default_imdb_api_key')
 
-    #youtube_api_key = 'AIzaSyDWS1A4PwZjaprW_y4dVpxyHZ2LdG_7b_c'
-    #tmdb_api_key = 'ab161afc77261f0c9325f2b209cdb165'
-    #imdb_api_key = 'badd6f81'
+    #Insert API keys into
+    
+    #youtube_api_key = ''
+    #tmdb_api_key = ''
+    #imdb_api_key = ''
 
     #Create an instance of YouTubeDataSource and TMDbDataSource with the provided API keys. 
     youtube_ds = YouTubeDataSource(youtube_api_key)
